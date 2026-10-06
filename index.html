@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ILHAM NURCAHYA | Portofolio Personal</title>
+
+    <!-- Meta SEO & Open Graph -->
+    <meta name="description" content="Portofolio Personal Ilham Nurcahya - Mahasiswa Teknik Informatika, Full-Stack & Mobile Developer." />
+    <meta property="og:title" content="ILHAM NURCAHYA | Portofolio Personal" />
+    <meta property="og:description" content="Mahasiswa Teknik Informatika | Full-Stack & Mobile Developer (Laravel, React, Flutter)" />
+    <meta property="og:image" content="pp.jpeg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind = {
+        config: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                head: ["Space Grotesk", "sans-serif"],
+                body: ["Manrope", "sans-serif"],
+              },
+              boxShadow: {
+                sheen: "0 18px 50px -28px rgba(255, 255, 255, 0.18)",
+                depth: "0 20px 70px -35px rgba(0, 0, 0, 0.85)",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      :root {
+        color-scheme: dark;
+      }
+
+      body {
+        font-family: "Manrope", sans-serif;
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(255, 255, 255, 0.08),
+            transparent 28%
+          ),
+          linear-gradient(180deg, #050505 0%, #111111 30%, #0a0a0a 100%);
+      }
+
+      body.light-theme {
+        color-scheme: light;
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(255, 255, 255, 0.85),
+            transparent 22%
+          ),
+          linear-gradient(180deg, #f8f8f8 0%, #dcdcdc 28%, #efefef 100%);
+      }
+
+      body.light-theme header {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.95),
+          rgba(234, 234, 234, 0.88)
+        );
+        border-color: rgba(0, 0, 0, 0.08);
+      }
+
+      body.light-theme footer {
+        background: rgba(248, 248, 248, 0.94);
+        border-color: rgba(0, 0, 0, 0.08);
+      }
+
+      body.light-theme [class*="text-white/"] {
+        color: rgba(17, 17, 17, 0.72) !important;
+      }
+
+      body.light-theme [class*="text-white"] {
+        color: #111111 !important;
+      }
+
+      body.light-theme [class*="border-white/"] {
+        border-color: rgba(0, 0, 0, 0.12) !important;
+      }
+
+      body.light-theme #beranda {
+        border-color: rgba(0, 0, 0, 0.08);
+      }
+
+      body.light-theme #beranda > div.absolute {
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(255, 255, 255, 0.98),
+            transparent 30%
+          ),
+          radial-gradient(
+            circle at 20% 20%,
+            rgba(0, 0, 0, 0.05),
+            transparent 18%
+          ),
+          linear-gradient(180deg, #fafafa 0%, #ececec 45%, #dadada 100%);
+      }
+
+      body.light-theme #tentang {
+        background: linear-gradient(
+          135deg,
+          #f8fafc 0%,
+          #e9eef5 48%,
+          #dce5ef 100%
+        );
+      }
+
+      body.light-theme #tentang .fade-in-left {
+        border-color: rgba(0, 0, 0, 0.08);
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      body.light-theme #keahlian {
+        background: linear-gradient(
+          90deg,
+          #f8fafc 0%,
+          #eef2f7 34%,
+          #dce5ef 34%,
+          #f8fafc 100%
+        );
+      }
+
+      body.light-theme #keahlian .fade-in-right {
+        border-color: rgba(0, 0, 0, 0.08);
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      body.light-theme .skill-token {
+        border-color: rgba(0, 0, 0, 0.08);
+        background: linear-gradient(180deg, #ffffff 0%, #e9eef5 100%);
+      }
+
+      body.light-theme #proyek {
+        background:
+          radial-gradient(circle at top, rgba(59, 130, 246, 0.08), transparent 24%),
+          linear-gradient(180deg, #f8fafc 0%, #e9eef5 54%, #f8fafc 100%);
+      }
+
+      body.light-theme .project-card {
+        border-color: rgba(0, 0, 0, 0.08);
+        background: rgba(255, 255, 255, 0.78);
+      }
+
+      body.light-theme #kontak {
+        background: linear-gradient(
+          135deg,
+          #f8fafc 0%,
+          #e9eef5 50%,
+          #f8fafc 100%
+        );
+      }
+
+      body.light-theme #kontak .fade-in-right {
+        border-color: rgba(0, 0, 0, 0.08);
+        background: rgba(255, 255, 255, 0.78);
+      }
+
+      body.light-theme #mobileNav > div {
+        border-color: rgba(0, 0, 0, 0.08);
+        background: rgba(255, 255, 255, 0.96);
+      }
+
+      body.light-theme .shadow-depth {
+        box-shadow: 0 20px 70px -35px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 640px) {
+        .hero-title {
+          font-size: clamp(2.7rem, 14vw, 3.75rem);
+        }
+
+        .hero-panel {
+          max-width: 100%;
+        }
+
+        .hero-copy {
+          padding-top: 0.25rem;
+        }
+      }
+
+      .fade-in-left,
+      .fade-in-right,
+      .fade-in-up {
+        opacity: 0;
+        transition:
+          opacity 0.85s ease,
+          transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+        will-change: transform, opacity;
+      }
+
+      .fade-in-left {
+        transform: translateX(-56px);
+      }
+
+      .fade-in-right {
+        transform: translateX(56px);
+      }
+
+      .fade-in-up {
+        transform: translateY(34px);
+      }
+
+      .show {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+
+      .skill-token,
+      .project-card {
+        transition:
+          transform 220ms ease,
+          box-shadow 220ms ease,
+          border-color 220ms ease,
+          opacity 220ms ease;
+      }
+
+      .skill-token:hover,
+      .project-card:hover {
+        transform: translateY(-6px) scale(1.015);
+        box-shadow: 0 22px 60px -35px rgba(255, 255, 255, 0.25);
+      }
+
+      .switch-track {
+        transition:
+          background-color 220ms ease,
+          border-color 220ms ease;
+      }
+
+      .switch-knob {
+        transition:
+          transform 220ms ease,
+          background-color 220ms ease;
+      }
+
+      .light-theme .switch-knob {
+        transform: translateX(20px);
+      }
+
+      .light-theme .switch-track {
+        background-color: rgba(255, 255, 255, 0.78);
+        border-color: rgba(17, 17, 17, 0.16);
+      }
+    </style>
+  </head>
+  <body
+    class="font-body text-white antialiased selection:bg-white selection:text-black"
+  >
+    <header
+      class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-gradient-to-b from-zinc-900/95 via-zinc-900/80 to-zinc-800/65 backdrop-blur-xl"
+    >
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8"
+        aria-label="Navigasi Utama"
+      >
+        <a
+          href="#beranda"
+          class="font-head text-lg font-bold tracking-[0.35em] text-white sm:text-xl"
+          >ILHAM NURCAHYA</a
+        >
+
+        <div class="hidden items-center gap-8 md:flex">
+          <a
+            href="#beranda"
+            class="text-sm font-medium tracking-wide text-white/80 transition hover:text-white"
+            >Beranda</a
+          >
+          <a
+            href="#tentang"
+            class="text-sm font-medium tracking-wide text-white/80 transition hover:text-white"
+            >Tentang</a
+          >
+          <a
+            href="#keahlian"
+            class="text-sm font-medium tracking-wide text-white/80 transition hover:text-white"
+            >Keahlian</a
+          >
+          <a
+            href="#proyek"
+            class="text-sm font-medium tracking-wide text-white/80 transition hover:text-white"
+            >Proyek</a
+          >
+          <a
+            href="#kontak"
+            class="text-sm font-medium tracking-wide text-white/80 transition hover:text-white"
+            >Kontak</a
+          >
+        </div>
+
+        <div class="flex items-center gap-3">
+          <button
+            id="darkToggle"
+            class="group inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-3 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-white/75 transition hover:border-white/30 hover:bg-white/10"
+            aria-label="Ganti tema gelap/terang"
+          >
+            <span
+              class="switch-track relative h-6 w-11 rounded-full border border-white/20 bg-black/55 p-0.5"
+            >
+              <span
+                class="switch-knob block h-5 w-5 rounded-full bg-white shadow-sheen"
+              ></span>
+            </span>
+            <span class="hidden sm:inline">Tema</span>
+          </button>
+          <button
+            id="menuBtn"
+            class="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 transition hover:border-white/30 hover:bg-white/10 md:hidden"
+            aria-label="Buka menu navigasi"
+          >
+            Menu
+          </button>
+        </div>
+      </nav>
+
+      <div
+        id="mobileNav"
+        class="mx-auto hidden max-w-7xl border-t border-white/10 px-4 py-4 md:hidden sm:px-6 lg:px-8"
+      >
+        <div
+          class="grid gap-3 rounded-3xl border border-white/10 bg-black/70 p-4 shadow-depth"
+        >
+          <a
+            href="#beranda"
+            class="rounded-2xl border border-white/10 px-4 py-3 text-sm font-medium text-white/80"
+            >Beranda</a
+          >
+          <a
+            href="#tentang"
+            class="rounded-2xl border border-white/10 px-4 py-3 text-sm font-medium text-white/80"
+            >Tentang</a
+          >
+          <a
+            href="#keahlian"
+            class="rounded-2xl border border-white/10 px-4 py-3 text-sm font-medium text-white/80"
+            >Keahlian</a
+          >
+          <a
+            href="#proyek"
+            class="rounded-2xl border border-white/10 px-4 py-3 text-sm font-medium text-white/80"
+            >Proyek</a
+          >
+          <a
+            href="#kontak"
+            class="rounded-2xl border border-white/10 px-4 py-3 text-sm font-medium text-white/80"
+            >Kontak</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-24">
+      <section
+        id="beranda"
+        class="relative overflow-hidden border-b border-white/10"
+      >
+        <div
+          class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.14),_transparent_30%),radial-gradient(circle_at_20%_20%,_rgba(255,255,255,0.08),_transparent_18%),linear-gradient(180deg,_#050505_0%,_#111111_45%,_#0a0a0a_100%)]"
+        ></div>
+        <div
+          class="relative mx-auto grid min-h-[calc(100vh-6rem)] max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1fr_0.82fr] lg:gap-12 lg:px-8 lg:py-24"
+        >
+          <div class="hero-copy fade-in-up space-y-8">
+            <div
+              class="inline-flex items-center gap-3 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-2 text-xs uppercase tracking-[0.25em] text-emerald-400"
+            >
+              <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Terbuka untuk Kolaborasi & Proyek
+            </div>
+            <div class="space-y-5">
+              <p
+                class="font-head text-sm font-semibold uppercase tracking-[0.45em] text-white/55"
+              >
+                Halo, saya
+              </p>
+              <h1
+                class="hero-title font-head font-extrabold leading-[0.92] tracking-[-0.05em] text-white sm:text-6xl lg:text-7xl"
+              >
+                ILHAM NURCAHYA
+              </h1>
+              <p class="max-w-2xl text-lg font-medium text-white/75 sm:text-xl">
+                Mahasiswa Teknik Informatika | Full-Stack & Mobile Developer
+              </p>
+              <p class="max-w-2xl text-sm leading-7 text-white/65 sm:text-base">
+                Saya membangun solusi digital fungsional melalui pengembangan
+                arsitektur web yang tangguh, sistem manajemen terstruktur, serta
+                aplikasi seluler modern yang responsif dan interaktif.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#proyek"
+                class="rounded-full bg-white px-6 py-3 text-sm font-bold text-black transition duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:bg-white/90 hover:shadow-depth"
+                >Lihat Proyek</a
+              >
+              <a
+                href="https://github.com/ilham-nurcahya"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-bold text-white transition duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-white/40 hover:bg-white/10"
+                >GitHub Profil ↗</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="hero-panel fade-in-up relative mx-auto w-full max-w-md lg:max-w-lg"
+          >
+            <div
+              class="absolute inset-0 -z-10 rounded-[2rem] bg-white/10 blur-3xl"
+            ></div>
+            <div
+              class="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-depth backdrop-blur-xl sm:p-5"
+            >
+              <div
+                class="aspect-[4/5] overflow-hidden rounded-[1.6rem] border border-white/10 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.15),_transparent_35%),linear-gradient(180deg,_rgba(255,255,255,0.08),_rgba(255,255,255,0.02))] p-3 sm:p-4"
+              >
+                <div
+                  class="h-full overflow-hidden rounded-[1.35rem] border border-dashed border-white/25 bg-black/25 text-center"
+                >
+                  <img
+                    src="pp.jpeg"
+                    alt="Foto profil ILHAM NURCAHYA"
+                    class="h-full w-full object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="tentang"
+        class="relative overflow-hidden border-b border-black/10 bg-[linear-gradient(135deg,_#dcdcdc_0%,_#7f7f7f_48%,_#111111_100%)] text-white"
+      >
+        <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+          <div
+            class="fade-in-left max-w-4xl rounded-[2rem] border border-white/10 bg-black/25 p-8 shadow-depth backdrop-blur-md sm:p-10 lg:p-12"
+          >
+            <p
+              class="font-head text-sm font-bold uppercase tracking-[0.45em] text-white/55"
+            >
+              TENTANG SAYA
+            </p>
+            <h2
+              class="mt-4 font-head text-3xl font-extrabold tracking-[-0.04em] text-white sm:text-4xl"
+            >
+              Mahasiswa aktif yang antusias dalam pengembangan sistem aplikasi
+              modern.
+            </h2>
+            <p
+              class="mt-6 max-w-3xl text-sm leading-8 text-white/78 sm:text-base"
+            >
+              Saya adalah Ilham Nurcahya, mahasiswa program studi Teknik Informatika di Universitas Teknologi Bandung (UTB). Saya berfokus secara mendalam pada ekosistem pengembangan perangkat lunak berbasis web dan seluler.
+            </p>
+            <p
+              class="mt-4 max-w-3xl text-sm leading-8 text-white/70 sm:text-base"
+            >
+              Selain menguasai pengelolaan sistem database dan antarmuka pengguna interaktif, saya juga memiliki ketertarikan kuat dalam implementasi analisis sistem menggunakan UML, pemanfaatan AI, serta eksplorasi teknologi Augmented Reality (AR) untuk menyelesaikan berbagai studi kasus teknis.`
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="keahlian"
+        class="relative overflow-hidden border-b border-white/10 bg-[linear-gradient(90deg,_#0b0b0b_0%,_#1d1d1d_34%,_#d6d6d6_34%,_#eeeeee_100%)]"
+      >
+        <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+          <div
+            class="fade-in-right max-w-6xl rounded-[2rem] border border-white/10 bg-black/25 p-8 shadow-depth backdrop-blur-md sm:p-10 lg:p-12"
+          >
+            <div
+              class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between"
+            >
+              <div>
+                <p
+                  class="font-head text-sm font-bold uppercase tracking-[0.45em] text-white/55"
+                >
+                  KEAHLIAN SAYA
+                </p>
+                <h2
+                  class="mt-4 font-head text-3xl font-extrabold tracking-[-0.04em] text-white sm:text-4xl"
+                >
+                  Kumpulan teknologi untuk membangun sistem dari hulu ke hilir.
+                </h2>
+              </div>
+              <p class="max-w-2xl text-sm leading-7 text-white/68 sm:text-base">
+                Berikut adalah daftar framework, bahasa pemrograman, dan alat
+                yang biasa saya gunakan dalam menyusun logika backend, UI
+                frontend, hingga visualisasi sistem.
+              </p>
+            </div>
+
+            <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+              <article
+                class="skill-token rounded-[1.75rem] border border-white/10 bg-[linear-gradient(180deg,_#0b0b0b_0%,_#2a2a2a_100%)] p-6 shadow-depth"
+              >
+                <p
+                  class="font-head text-lg font-bold tracking-[0.22em] text-white"
+                >
+                  Web Stack
+                </p>
+                <div
+                  class="mt-5 flex flex-wrap gap-3 text-xs font-bold uppercase tracking-[0.22em] text-white/80"
+                >
+                  <span
+                    class="rounded-full border border-white/15 bg-white/5 px-3 py-2"
+                    >React</span
+                  >
+                  <span
+                    class="rounded-full border border-white/15 bg-white/5 px-3 py-2"
+                    >Inertia.js</span
+                  >
+                  <span
+                    class="rounded-full border border-white/15 bg-white/5 px-3 py-2"
+                    >Laravel</span
+                  >
+                </div>
+              </article>
+
+              <article
+                class="skill-token rounded-[1.75rem] border border-white/10 bg-[linear-gradient(180deg,_#303030_0%,_#050505_100%)] p-6 shadow-depth"
+              >
+                <p
+                  class="font-head text-lg font-bold tracking-[0.22em] text-white"
+                >
+                  Mobile & AR
+                </p>
+                <div
+                  class="mt-5 flex flex-wrap gap-3 text-xs font-bold uppercase tracking-[0.22em] text-white/80"
+                >
+                  <span
+                    class="rounded-full border border-white/15 bg-white/5 px-3 py-2"
+                    >Flutter</span
+                  >
+                  <span
+                    class="rounded-full border border-white/15 bg-white/5 px-3 py-2"
+                    >Firebase</span
+                  >
+                  <span
+                    class="rounded-full border border-white/15 bg-white/5 px-3 py-2"
+                    >Unity (Vuforia)</span
+                  >
+                </div>
+              </article>
+
+              <article
+                class="skill-token rounded-[1.75rem] border border-black/10 bg-[linear-gradient(180deg,_#f0f0f0_0%,_#c9c9c9_100%)] p-6 shadow-depth"
+              >
+                <p
+                  class="font-head text-lg font-bold tracking-[0.22em] text-black"
+                >
+                  Desain & Analisis
+                </p>
+                <div
+                  class="mt-5 flex flex-wrap gap-3 text-xs font-bold uppercase tracking-[0.22em] text-black/80"
+                >
+                  <span
+                    class="rounded-full border border-black/10 bg-white/50 px-3 py-2"
+                    >UML</span
+                  >
+                  <span
+                    class="rounded-full border border-black/10 bg-white/50 px-3 py-2"
+                    >AI Generate</span
+                  >
+                  <span
+                    class="rounded-full border border-black/10 bg-white/50 px-3 py-2"
+                    >Figma</span
+                  >
+                </div>
+              </article>
+
+              <article
+                class="skill-token rounded-[1.75rem] border border-black/10 bg-[linear-gradient(180deg,_#dedede_0%,_#f8f8f8_100%)] p-6 shadow-depth"
+              >
+                <p
+                  class="font-head text-lg font-bold tracking-[0.22em] text-black"
+                >
+                  Utilitas
+                </p>
+                <div
+                  class="mt-5 flex flex-wrap gap-3 text-xs font-bold uppercase tracking-[0.22em] text-black/80"
+                >
+                  <span
+                    class="rounded-full border border-black/10 bg-white/70 px-3 py-2"
+                    >Git</span
+                  >
+                  <span
+                    class="rounded-full border border-black/10 bg-white/70 px-3 py-2"
+                    >MySQL</span
+                  >
+                  <span
+                    class="rounded-full border border-black/10 bg-white/70 px-3 py-2"
+                    >VS Code</span
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="proyek"
+        class="relative overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.08),_transparent_24%),linear-gradient(180deg,_#050505_0%,_#101010_54%,_#080808_100%)]"
+      >
+        <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+          <div class="fade-in-left">
+            <p
+              class="font-head text-sm font-bold uppercase tracking-[0.45em] text-white/55"
+            >
+              PROYEK UNGGULAN
+            </p>
+            <h2
+              class="mt-4 font-head text-3xl font-extrabold tracking-[-0.04em] text-white sm:text-4xl"
+            >
+              Beberapa karya perangkat lunak yang telah saya kembangkan.
+            </h2>
+          </div>
+
+          <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <!-- Proyek 1 -->
+            <article
+              class="project-card fade-in-left overflow-hidden rounded-[1.8rem] border border-white/10 bg-white/5 shadow-depth backdrop-blur-md"
+            >
+              <div
+                class="aspect-[16/10] overflow-hidden border-b border-white/10 bg-[linear-gradient(135deg,_#f5eee0_0%,_#d5d1c7_100%)]"
+              >
+                <img
+                  src="smartcampus.jpeg"
+                  alt="Tampilan aplikasi Smart Campus"
+                  class="h-full w-full object-contain p-2 transition duration-500 hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="font-head text-2xl font-bold text-white">
+                  Aplikasi Smart Campus
+                </h3>
+                <p class="mt-3 text-sm leading-7 text-white/68">
+                  Aplikasi seluler layanan antar mahasiswa terintegrasi otentikasi login hingga operasional layanan.[cite: 1, 2]
+                </p>
+                <p
+                  class="mt-4 text-xs font-semibold uppercase tracking-[0.28em] text-white/45"
+                >
+                  Flutter / Firebase DB
+                </p>
+                <div class="mt-6 flex flex-wrap gap-3">
+                  <a
+                    href="https://github.com/ilham-nurcahya"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="rounded-full border border-white/15 bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-black transition hover:-translate-y-1 hover:bg-white/90"
+                    >GitHub ↗</a
+                  >
+                  <a
+                    href="#kontak"
+                    class="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-white transition hover:-translate-y-1 hover:bg-white/10"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Proyek 2 -->
+            <article
+              class="project-card fade-in-left overflow-hidden rounded-[1.8rem] border border-white/10 bg-white/5 shadow-depth backdrop-blur-md"
+            >
+              <div
+                class="aspect-[16/10] overflow-hidden border-b border-white/10 bg-[linear-gradient(135deg,_#eee9e1_0%,_#d6d5d2_100%)]"
+              >
+                <img
+                  src="photobooth.png"
+                  alt="Tampilan antarmuka sistem photobooth digital"
+                  class="h-full w-full object-contain p-2 transition duration-500 hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="font-head text-2xl font-bold text-white">
+                  Sistem Photobooth Digital
+                </h3>
+                <p class="mt-3 text-sm leading-7 text-white/68">
+                  Sistem photobooth berbasis web dengan pemetaan frame, Midtrans QRIS, dan cetak otomatis.[cite: 1]
+                </p>
+                <p
+                  class="mt-4 text-xs font-semibold uppercase tracking-[0.28em] text-white/45"
+                >
+                  Laravel / React / Inertia
+                </p>
+                <div class="mt-6 flex flex-wrap gap-3">
+                  <a
+                    href="https://github.com/ilham-nurcahya"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="rounded-full border border-white/15 bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-black transition hover:-translate-y-1 hover:bg-white/90"
+                    >GitHub ↗</a
+                  >
+                  <a
+                    href="#kontak"
+                    class="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-white transition hover:-translate-y-1 hover:bg-white/10"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Proyek 3 -->
+            <article
+              class="project-card fade-in-left overflow-hidden rounded-[1.8rem] border border-white/10 bg-white/5 shadow-depth backdrop-blur-md"
+            >
+              <div
+                class="aspect-[16/10] overflow-hidden border-b border-white/10 bg-[linear-gradient(135deg,_#e8f5ff_0%,_#d8e8f6_100%)]"
+              >
+                <img
+                  src="bersihin.png"
+                  alt="Tampilan aplikasi BERSIH.IN"
+                  class="h-full w-full object-contain p-2 transition duration-500 hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="font-head text-2xl font-bold text-white">
+                  AR Tracker & Desain BERSIH.IN
+                </h3>
+                <p class="mt-3 text-sm leading-7 text-white/68">
+                  Object Tracking Augmented Reality dan perancangan materi promosi digital.[cite: 1, 2]
+                </p>
+                <p
+                  class="mt-4 text-xs font-semibold uppercase tracking-[0.28em] text-white/45"
+                >
+                  Unity / Vuforia / Design
+                </p>
+                <div class="mt-6 flex flex-wrap gap-3">
+                  <a
+                    href="https://github.com/ilham-nurcahya"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="rounded-full border border-white/15 bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-black transition hover:-translate-y-1 hover:bg-white/90"
+                    >GitHub ↗</a
+                  >
+                  <a
+                    href="#kontak"
+                    class="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-white transition hover:-translate-y-1 hover:bg-white/10"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="kontak"
+        class="relative overflow-hidden bg-[linear-gradient(135deg,_#141414_0%,_#2a2a2a_50%,_#e2e2e2_100%)] text-white"
+      >
+        <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+          <div
+            class="fade-in-right grid gap-8 rounded-[2rem] border border-white/10 bg-black/30 p-6 shadow-depth backdrop-blur-md lg:grid-cols-[0.95fr_1.05fr] lg:p-10"
+          >
+            <div class="space-y-6">
+              <div>
+                <p
+                  class="font-head text-sm font-bold uppercase tracking-[0.45em] text-white/55"
+                >
+                  KONTAK
+                </p>
+                <h2
+                  class="mt-4 font-head text-3xl font-extrabold tracking-[-0.04em] text-white sm:text-4xl"
+                >
+                  Mari terhubung dan diskusikan ide inovatif Anda bersama saya.
+                </h2>
+              </div>
+              <div
+                class="overflow-hidden rounded-[1.5rem] border border-white/10 bg-[linear-gradient(180deg,_#f2f2f2_0%,_#7f7f7f_100%)] p-4 shadow-depth"
+              >
+                <div
+                  class="grid aspect-[4/3] place-items-center rounded-[1.1rem] border border-black/10 bg-[radial-gradient(circle_at_25%_25%,_rgba(255,255,255,0.92),_rgba(0,0,0,0.05)_45%),linear-gradient(180deg,_#d0d0d0_0%,_#757575_100%)] text-center text-sm font-bold uppercase tracking-[0.45em] text-black/60"
+                >
+                  BANDUNG, INDONESIA
+                </div>
+              </div>
+              <div
+                class="space-y-3 text-sm font-semibold uppercase tracking-[0.24em] text-white/70"
+              >
+                <a
+                  href="https://github.com/ilham-nurcahya"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="block rounded-full border border-white/10 bg-white/5 px-5 py-3 transition hover:-translate-y-1 hover:bg-white/10"
+                  >GitHub <span aria-hidden="true">↗</span></a
+                >
+                <a
+                  href="https://www.instagram.com/ilhamchyyy?stkn=MXhpZmZweHZ1N2Y3Mg=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="block rounded-full border border-white/10 bg-white/5 px-5 py-3 transition hover:-translate-y-1 hover:bg-white/10"
+                  >Instagram <span aria-hidden="true">↗</span></a
+                >
+                <a
+                  href="https://wa.me/6281322253281"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="block rounded-full border border-white/10 bg-white/5 px-5 py-3 transition hover:-translate-y-1 hover:bg-white/10"
+                  >WhatsApp <span aria-hidden="true">↗</span></a
+                >
+                <a
+                  href="mailto:ilhamnurcahya403@gmail.com"
+                  class="block rounded-full border border-white/10 bg-white/5 px-5 py-3 transition hover:-translate-y-1 hover:bg-white/10"
+                  >Email <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+
+            <div
+              class="relative isolate overflow-hidden rounded-[1.75rem] border border-white/15 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.16),_transparent_38%),linear-gradient(145deg,_rgba(255,255,255,0.1),_rgba(255,255,255,0.025))] p-7 shadow-depth sm:p-9"
+            >
+              <div
+                aria-hidden="true"
+                class="absolute -right-16 -top-20 -z-10 h-56 w-56 rounded-full bg-white/10 blur-3xl"
+              ></div>
+              <p
+                class="text-xs font-bold uppercase tracking-[0.35em] text-white/55"
+              >
+                PUNYA IDE MENARIK?
+              </p>
+              <h3
+                class="mt-4 font-head text-3xl font-extrabold tracking-[-0.04em] text-white sm:text-4xl"
+              >
+                Mari wujudkan sesuatu yang hebat.
+              </h3>
+              <p class="mt-4 max-w-lg text-sm leading-7 text-white/70">
+                Ceritakan rencana atau peluang kolaborasi Anda. Pilih kanal
+                favorit—pesan pembuka sudah disiapkan, tinggal kirim.
+              </p>
+              <button
+                id="contactToggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="contactOptions"
+                class="mt-7 inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-white px-6 py-4 text-sm font-extrabold uppercase tracking-[0.2em] text-black shadow-[0_16px_40px_-18px_rgba(255,255,255,0.55)] transition duration-300 hover:-translate-y-1 hover:bg-white/90 sm:w-auto"
+              >
+                Kirim Pesan
+                <span aria-hidden="true" class="text-lg">↗</span>
+              </button>
+              <div
+                id="contactOptions"
+                class="hidden mt-6 space-y-3"
+                aria-live="polite"
+              >
+                <p
+                  class="text-xs font-bold uppercase tracking-[0.24em] text-white/55"
+                >
+                  Pilih cara menghubungi
+                </p>
+                <div class="grid gap-3 sm:grid-cols-2">
+                  <a
+                    id="whatsappOption"
+                    href="https://wa.me/6281322253281?text=Halo%20Kak%20Ilham%2C%20saya%20melihat%20portofolio%20Anda%20dan%20tertarik%20untuk%20berdiskusi%20lebih%20lanjut.%20Apakah%20Anda%20tersedia%20untuk%20berbincang%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="group rounded-2xl border border-white/15 bg-white/5 p-4 transition duration-300 hover:-translate-y-1 hover:border-white/35 hover:bg-white/10"
+                  >
+                    <span class="flex items-center justify-between gap-3">
+                      <span class="font-bold">WhatsApp</span>
+                      <span
+                        aria-hidden="true"
+                        class="transition-transform group-hover:translate-x-1"
+                        >↗</span
+                      >
+                    </span>
+                    <span class="mt-2 block text-xs leading-5 text-white/55">
+                      Pesan santai, siap dibuka di WhatsApp.
+                    </span>
+                  </a>
+                  <a
+                    id="emailOption"
+                    href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ilhamnurcahya403%40gmail.com&amp;su=Diskusi%20Kolaborasi%20%7C%20Portofolio%20Ilham%20Nurcahya&amp;body=Halo%20Ilham%2C%0A%0ASaya%20melihat%20portofolio%20Anda%20dan%20tertarik%20untuk%20berdiskusi%20lebih%20lanjut%20mengenai%20peluang%20kolaborasi.%0A%0AApakah%20Anda%20bersedia%20untuk%20berbincang%3F%0A%0ASalam%2C"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="group rounded-2xl border border-white/15 bg-white/5 p-4 transition duration-300 hover:-translate-y-1 hover:border-white/35 hover:bg-white/10"
+                  >
+                    <span class="flex items-center justify-between gap-3">
+                      <span class="font-bold">Email</span>
+                      <span
+                        aria-hidden="true"
+                        class="transition-transform group-hover:translate-x-1"
+                        >↗</span
+                      >
+                    </span>
+                    <span class="mt-2 block text-xs leading-5 text-white/55">
+                      Draf email profesional sudah disiapkan.
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-black/85 py-8 backdrop-blur-xl">
+      <div
+        class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-4 px-4 text-sm text-white/65 sm:px-6 lg:flex-row lg:items-center lg:px-8"
+      >
+        <p>&copy; 2026 Ilham Nurcahya</p>
+        <a
+          href="#beranda"
+          class="font-semibold uppercase tracking-[0.24em] text-white/75 transition hover:text-white"
+          >Kembali Ke Atas</a
+        >
+      </div>
+    </footer>
+
+    <script>
+      const htmlRoot = document.documentElement;
+      const body = document.body;
+      const darkToggle = document.getElementById("darkToggle");
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileNav = document.getElementById("mobileNav");
+      const contactToggle = document.getElementById("contactToggle");
+      const contactOptions = document.getElementById("contactOptions");
+
+      const savedTheme = localStorage.getItem("ilham-theme");
+
+      const applyTheme = (theme) => {
+        const isLight = theme === "light";
+        body.classList.toggle("light-theme", isLight);
+        htmlRoot.classList.toggle("dark", !isLight);
+        localStorage.setItem("ilham-theme", theme);
+      };
+
+      if (savedTheme === "light" || savedTheme === "dark") {
+        applyTheme(savedTheme);
+      } else {
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        applyTheme(prefersDark ? "dark" : "light");
+      }
+
+      darkToggle.addEventListener("click", () => {
+        applyTheme(body.classList.contains("light-theme") ? "dark" : "light");
+      });
+
+      menuBtn.addEventListener("click", () => {
+        mobileNav.classList.toggle("hidden");
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth < 768) {
+            mobileNav.classList.add("hidden");
+          }
+        });
+      });
+
+      // Observer Animasi Scroll
+      document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver(
+          (entries, intersectionObserver) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                intersectionObserver.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.15,
+            rootMargin: "0px 0px -5% 0px",
+          }
+        );
+
+        document
+          .querySelectorAll(".fade-in-left, .fade-in-right, .fade-in-up")
+          .forEach((element) => observer.observe(element));
+      });
+
+      contactToggle.addEventListener("click", () => {
+        const isExpanded = contactToggle.getAttribute("aria-expanded") === "true";
+        contactToggle.setAttribute("aria-expanded", String(!isExpanded));
+        contactOptions.classList.toggle("hidden", isExpanded);
+      });
+    </script>
+  </body>
+</html>
